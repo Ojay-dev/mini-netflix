@@ -1,0 +1,11 @@
+<div class="container-fluid">
+  <h3>Movie Details</h3>
+  <div class="container" *ngIf="movies">
+    <img class="d-block" [src]="movie.Poster" alt="movie poster">
+    <h5 class="text-white" *ngIf="movie.Title">{{ movie.Title | uppercase }}</h5>
+    <p class="text-white" *ngIf="movie.Released">{{ movie.Released }}</p>
+    <p class="text-white" *ngIf="movie.genre">{{ movie.genre }}</p>
+    <p class="text-white" ngIf="movie.rating">{{ movie.rating }}</p>
+    <p class="text-white" *ngIf="movie.description">{{ movie.description }}</p>
+  </div>
+</div>

@@ -1,0 +1,11 @@
+<div class="container" *ngFor="let movie of movies; index as id">
+  <a [title]="movie.Title + ' details'" [routerLink]="['/movies', id]" routerLinkActive="router-link-active">
+    <div class="card" style="width:18rem;">
+      <img [src]="movie.Poster" class="card-img-top" alt="movie poster">
+      <div class="card-body">
+        <h5 class="card-title" *ngIf="movie.Title">{{ movie.Title }}</h5>
+        <p class="card-text" *ngIf="movie.Released">{{ movie.Released }}</p>
+      </div>
+    </div>
+  </a>
+</div>

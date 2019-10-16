@@ -1,0 +1,17 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand text-danger" [routerLink]="['/']" routerLinkActive="router-link-active" >Mini-Netflix</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse text-right">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link text-light" [routerLink]="['/movies']" routerLinkActive="router-link-active" >Movies</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-light" [routerLink]="['/favourites']" routerLinkActive="router-link-active" >Favourites</a>
+      </li>
+    </ul>
+  </div>
+</nav>
