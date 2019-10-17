@@ -16,11 +16,11 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 @NgModule({
   declarations: [
     AppComponent,
+    NavigationComponent,
     MoviesListComponent,
     MoviesDetailComponent,
     FavouriteMoviesComponent,
-    NavigationComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
   ],
   imports: [
     BrowserModule,

@@ -368,46 +368,6 @@ export class InMemoryDataService implements InMemoryDbService {
         Response: 'True'
       },
       {
-        Title: 'Wonder Woman',
-        Year: '2017',
-        Rated: 'PG-13',
-        Released: '02 Jun 2017',
-        Runtime: '141 min',
-        Genre: 'Action, Adventure, Fantasy, Sci-Fi, War',
-        Director: 'Patty Jenkins',
-        Writer: 'Allan Heinberg (screenplay by), Zack Snyder (story by), Allan Heinberg (story by), Jason Fuchs (story by), William Moulton Marston (Wonder Woman created by)',
-        Actors: 'Gal Gadot, Chris Pine, Connie Nielsen, Robin Wright',
-        Plot: 'Diana, princess of the Amazons, trained to be an unconquerable warrior. Raised on a sheltered island paradise, when a pilot crashes on their shores and tells of a massive conflict raging in the outside world, Diana leaves her home, convinced she can stop the threat. Fighting alongside man in a war to end all wars, Diana will discover her full powers and her true destiny.',
-        Language: 'English, German, Dutch, French, Spanish, Chinese, Greek, Ancient (to 1453), North American Indian',
-        Country: 'USA, China, Hong Kong',
-        Awards: '17 wins & 54 nominations.',
-        Poster: 'https://m.media-amazon.com/images/M/MV5BNDFmZjgyMTEtYTk5MC00NmY0LWJhZjktOWY2MzI5YjkzODNlXkEyXkFqcGdeQXVyMDA4NzMyOA@.jpg',
-        Ratings: [
-          {
-            Source: 'Internet Movie Database',
-            Value: '7.4/10'
-          },
-          {
-            Source: 'Rotten Tomatoes',
-            Value: '93%'
-          },
-          {
-            Source: 'Metacritic',
-            Value: '76/100'
-          }
-        ],
-        Metascore: '76',
-        imdbRating: '7.4',
-        imdbVotes: '501,523',
-        imdbID: 'tt0451279',
-        Type: 'movie',
-        DVD: '19 Sep 2017',
-        BoxOffice: '$412,400,625',
-        Production: 'Warner Bros. Pictures',
-        Website: 'http://wonderwomanfilm.com/',
-        Response: 'True'
-      },
-      {
         Title: 'Black Panther',
         Year: '2018',
         Rated: 'PG-13',

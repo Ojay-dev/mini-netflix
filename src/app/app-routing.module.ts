@@ -7,8 +7,9 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 
 
 const routes: Routes = [
-  { path: '', component: MoviesListComponent },
-  { path: 'movies/:id', component: MoviesDetailComponent },
+  { path: '', pathMatch: 'full', redirectTo: 'movies'},
+  { path: 'movies', component: MoviesListComponent },
+  { path: 'movies/:imdbID', component: MoviesDetailComponent },
   { path: 'favourites', component: FavouriteMoviesComponent },
   { path: '**', component: PageNotFoundComponent },
 ];
