@@ -29,7 +29,7 @@ export class MovieService {
   /**
    * Get a single movie
    */
-  getMovie(id: number): Observable<Movie> {
+  getMovie(id: string): Observable<Movie> {
     console.log('Getting single movie');
     return this.http.get<Movie>(this.movieUrl + '/' + id)
       .pipe(
