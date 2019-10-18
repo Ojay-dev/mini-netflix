@@ -5,11 +5,10 @@ import { HttpClientModule } from '@angular/common/http';
 import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { InMemoryDataService } from './in-memory-data.service';
 
+import { MovieService } from './movie.service';
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { MoviesListComponent } from './movies-list/movies-list.component';
-import { MoviesDetailComponent } from './movies-detail/movies-detail.component';
-import { FavouriteMoviesComponent } from './favourite-movies/favourite-movies.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
@@ -17,9 +16,6 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
   declarations: [
     AppComponent,
     NavigationComponent,
-    MoviesListComponent,
-    MoviesDetailComponent,
-    FavouriteMoviesComponent,
     PageNotFoundComponent,
   ],
   imports: [
@@ -33,7 +29,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     ),
     AppRoutingModule
   ],
-  providers: [],
+  providers: [MovieService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

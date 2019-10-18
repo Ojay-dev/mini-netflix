@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { MovieService } from '../movie.service';
-import { Movie } from '../movie';
+import { Movie } from 'src/app/movie';
+import { MovieService } from 'src/app/movie.service';
 
 @Component({
   selector: 'app-movies-list',
@@ -24,3 +24,4 @@ export class MoviesListComponent implements OnInit {
   }
 
 }
+

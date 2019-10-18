@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { HttpClient } from '@angular/common/http';
 import { Movie } from './movie';
 import { Observable, of } from 'rxjs';
 import { catchError, map, tap } from 'rxjs/operators';
@@ -14,10 +14,6 @@ export class MovieService {
   ) { }
   private movieUrl = 'api/movies'; // URL to web api(:base/:collection)
 
-  httpOptions = {
-    headers: new HttpHeaders({ 'Content-Type': 'application/json' })
-  };
-
   /**
    * GET Movies from the Server
    */
@@ -30,12 +26,23 @@ export class MovieService {
       );
   }
 
+  /**
+   * Get a single movie
+   */
+  getMovie(id: number): Observable<Movie> {
+    console.log('Getting single movie');
+    return this.http.get<Movie>(this.movieUrl + '/' + id)
+      .pipe(
+        catchError(this.handleError<Movie>('getMovie'))
+      );
+  }
+
   // Handle Http operation that failed.
   private handleError<T>(operation = 'operation', result?: T) {
     return (error: any): Observable<T> => {
 
       // TODO: send the error to remote logging infrastructure
-      console.error(error); // log to console instead
+      console.log(error); // log to console instead
 
       // TODO: better job of transforming error for user consumption
       console.log(`${operation} failed: ${error}`);
