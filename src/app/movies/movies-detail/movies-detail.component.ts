@@ -16,10 +16,11 @@ export class MoviesDetailComponent implements OnInit {
     private movieService: MovieService) { }
 
   ngOnInit() {
-    this.route.params.forEach((params: Params) => {
+    this.route.params.subscribe((params: Params) => {
       console.log(params.id);
       this.movieService.getMovie(params.id).subscribe((movie: Movie) => {
         this.movie = movie;
+        console.log(this.movie);
       });
     });
   }

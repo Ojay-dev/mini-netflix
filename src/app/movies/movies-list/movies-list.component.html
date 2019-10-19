@@ -11,7 +11,7 @@
               <p class="card-text" *ngIf="movie.Genre">{{ movie.Genre }}</p>
               <p class="card-text" *ngIf="movie.Year">
                 <small class="text-muted">{{ movie.Year }}</small>
-                <a class="btn btn-danger float-right btn-sm text-white" [routerLink]="[movie.imdbID]"
+                <a class="btn btn-danger float-right btn-sm text-white" [routerLink]="[movie.id]"
                 routerLinkActive="router-link-active">Details</a>
               </p>
             </div>

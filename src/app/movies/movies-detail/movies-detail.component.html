@@ -2,10 +2,10 @@
     <h3>Movie Details</h3>
     <div class="container" *ngIf="movie">
       <img class="d-block" [src]="movie.Poster" alt="movie poster">
-      <h5 class="text-white" *ngIf="movie.Title">{{ movie.Title }}</h5>
-      <p class="text-white" *ngIf="movie.Released">{{ movie.Released }}</p>
-      <p class="text-white" *ngIf="movie.Genre">{{ movie.Genre }}</p>
-      <p class="text-white" ngIf="movie.Rating">{{ movie.Rating }}</p>
-      <p class="text-white" *ngIf="movie.Description">{{ movie.Description }}</p>
+      <h5 class="text-white">{{ movie.Title }}</h5>
+      <p class="text-white">{{ movie.Released }}</p>
+      <p class="text-white">{{ movie.Genre }}</p>
+      <p class="text-white" >{{ movie.Rating }}</p>
+      <p class="text-white">{{ movie.Description }}</p>
     </div>
   </div>
