@@ -29,12 +29,26 @@ export class MovieService {
   /**
    * Get a single movie
    */
-  getMovie(id: string): Observable<Movie> {
+  getMovie(id: number): Observable<Movie> {
     console.log('Getting single movie');
     return this.http.get<Movie>(this.movieUrl + '/' + id)
       .pipe(
         catchError(this.handleError<Movie>('getMovie'))
       );
+  }
+
+  /**
+   * Search for movies
+   */
+  searchMovies(searchQuery: string): Observable<Movie[]> {
+    console.log('Searching for movies');
+    if (!searchQuery.trim()) {
+      return of([]);
+    }
+    return this.http.get<Movie[]>(this.movieUrl + '/search?search=' + searchQuery)
+    .pipe(
+      catchError(this.handleError<Movie[]>('searchMovies', []))
+    );
   }
 
   // Handle Http operation that failed.

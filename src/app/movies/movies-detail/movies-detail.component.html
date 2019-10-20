@@ -1,11 +1,14 @@
 <div class="container-fluid">
     <h3>Movie Details</h3>
     <div class="container" *ngIf="movie">
-      <img class="d-block" [src]="movie.Poster" alt="movie poster">
+      <img class="d-block w-100" [src]="movie.Poster" alt="movie poster">
       <h5 class="text-white">{{ movie.Title }}</h5>
-      <p class="text-white">{{ movie.Released }}</p>
-      <p class="text-white">{{ movie.Genre }}</p>
-      <p class="text-white" >{{ movie.Rating }}</p>
-      <p class="text-white">{{ movie.Description }}</p>
+      <p class="text-white">Released: {{ movie.Released }}</p>
+      <p class="text-white">Genre: {{ movie.Genre }}</p>
+      <p class="text-white" >Director: {{ movie.Director }}</p>
+      <p class="text-white">Runtime: {{ movie.Runtime }}</p>
+      <p class="text-white">Language: {{ movie.Language }}</p>
+      <p class="text-white">Awards: {{ movie.Awards }}</p>
+      <p class="text-white">Plot: {{ movie.Plot }}</p>
     </div>
   </div>

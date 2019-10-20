@@ -12,6 +12,7 @@ import { AppComponent } from './app.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { FavouritesComponent } from './favourites/favourites.component';
+import { MovieSearchComponent } from './movie-search/movie-search.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { FavouritesComponent } from './favourites/favourites.component';
     NavigationComponent,
     FavouritesComponent,
     PageNotFoundComponent,
+    MovieSearchComponent,
   ],
   imports: [
     BrowserModule,
