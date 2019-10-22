@@ -1,0 +1,33 @@
+.search-result li {
+  border-bottom: 1px solid gray !important;
+  border-left: 1px solid gray !important;
+  border-right: 1px solid gray !important;
+  width: 195px !important;
+  height: 16px !important;
+  padding: 5px !important;
+  background-color: white !important;
+  cursor: pointer !important;
+  list-style-type: none !important;
+}
+
+.search-result li:hover {
+  background-color: #607D8B !important;
+}
+
+.search-result li a {
+  color: #888 !important;
+  display: block !important;
+  text-decoration: none !important;
+}
+
+.search-result li a:hover {
+  color: white !important;
+}
+.search-result li a:active {
+  color: white !important;
+}
+
+ul.search-result {
+  margin-top: 0 !important;
+  padding-left: 0 !important;
+}

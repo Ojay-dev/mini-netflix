@@ -45,7 +45,7 @@ export class MovieService {
     if (!searchQuery.trim()) {
       return of([]);
     }
-    return this.http.get<Movie[]>(this.movieUrl + '/search?search=' + searchQuery)
+    return this.http.get<Movie[]>(this.movieUrl + '/?Title=' + searchQuery)
     .pipe(
       catchError(this.handleError<Movie[]>('searchMovies', []))
     );

@@ -11,7 +11,7 @@ import { debounceTime, distinctUntilChanged, switchMap } from 'rxjs/operators';
 })
 export class MovieSearchComponent implements OnInit {
 
-  foundMovie: Observable<Movie[]>;
+  movies$: Observable<Movie[]>;
   private searchQuery = new Subject<string>();
 
   constructor(private movieService: MovieService) { }
@@ -22,7 +22,7 @@ export class MovieSearchComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.foundMovie = this.searchQuery.pipe(
+    this.movies$ = this.searchQuery.pipe(
       // wait 300ms after each keystroke before considering the term
       debounceTime(300),
 
